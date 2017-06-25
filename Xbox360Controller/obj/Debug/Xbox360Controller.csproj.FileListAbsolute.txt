@@ -1,0 +1,13 @@
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\bin\Debug\Xbox360Controller.exe.config
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\obj\Debug\Xbox360Controller.csprojResolveAssemblyReference.cache
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\obj\Debug\Xbox360Controller.Properties.Resources.resources
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\obj\Debug\Xbox360Controller.csproj.GenerateResource.Cache
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\bin\Debug\Xbox360Controller.exe
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\bin\Debug\Xbox360Controller.pdb
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\bin\Debug\SharpDX.dll
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\bin\Debug\SharpDX.XInput.dll
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\bin\Debug\SharpDX.xml
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\bin\Debug\SharpDX.XInput.xml
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\obj\Debug\Xbox360Controller.exe
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\obj\Debug\Xbox360Controller.pdb
+D:\ProgrammingProjects\C#\Xbox360Controller\Xbox360Controller\obj\Debug\Xbox360Controller.frmMain.resources
