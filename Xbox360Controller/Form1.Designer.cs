@@ -60,6 +60,8 @@
             this.lblBattery = new System.Windows.Forms.Label();
             this.lblBatteryLevel = new System.Windows.Forms.Label();
             this.lblBatteryType = new System.Windows.Forms.Label();
+            this.controllerCombo = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tbLeftMotor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbRightMotor)).BeginInit();
             this.SuspendLayout();
@@ -389,11 +391,32 @@
             this.lblBatteryType.TabIndex = 43;
             this.lblBatteryType.Text = "Battery Type:";
             // 
+            // controllerCombo
+            // 
+            this.controllerCombo.FormattingEnabled = true;
+            this.controllerCombo.Location = new System.Drawing.Point(330, 8);
+            this.controllerCombo.Name = "controllerCombo";
+            this.controllerCombo.Size = new System.Drawing.Size(121, 24);
+            this.controllerCombo.TabIndex = 44;
+            this.controllerCombo.Format += new System.Windows.Forms.ListControlConvertEventHandler(this.controllerCombo_Format);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(250, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Controller:";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(366, 451);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.controllerCombo);
             this.Controls.Add(this.lblBatteryType);
             this.Controls.Add(this.lblBatteryLevel);
             this.Controls.Add(this.lblBattery);
@@ -430,7 +453,7 @@
             this.Controls.Add(this.lblLeftStickX);
             this.Controls.Add(this.lblStatus);
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.Text = "Xbox260ControllerTest";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tbLeftMotor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbRightMotor)).EndInit();
@@ -477,6 +500,8 @@
         private System.Windows.Forms.Label lblBattery;
         private System.Windows.Forms.Label lblBatteryLevel;
         private System.Windows.Forms.Label lblBatteryType;
+        private System.Windows.Forms.ComboBox controllerCombo;
+        private System.Windows.Forms.Label label1;
     }
 }
 

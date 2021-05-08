@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SharpDX.XInput;
+
 
 using System.Threading;
 //using SharpDX.XInput;
@@ -17,13 +19,27 @@ namespace XboxControllerTest {
 
         Xbox360Controller controller;
 
+        Controller[] controllers = new[] {
+            new Controller(UserIndex.One),
+            new Controller(UserIndex.Two),
+            new Controller(UserIndex.Three),
+            new Controller(UserIndex.Four)
+        };
+
         public frmMain() {
             InitializeComponent();
+            controllerCombo.DataSource = controllers;
+            controllerCombo.SelectedValueChanged += new EventHandler(this.comboBox1_SelectedValueChanged);
+        }
+
+        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            controller.setController((Controller)controllerCombo.SelectedItem);
         }
 
 
         private void Form1_Load(object sender, EventArgs e) {
-            controller = new Xbox360Controller();
+            controller = new Xbox360Controller((Controller)controllerCombo.SelectedItem);
             tmrUpdate.Start();
         }
 
@@ -100,6 +116,12 @@ namespace XboxControllerTest {
             
             // Set vibration on controller
             controller.setVibration(tbLeftMotor.Value, tbRightMotor.Value);
+        }
+
+        private void controllerCombo_Format(object sender, ListControlConvertEventArgs e)
+        {
+            string Name = Enum.GetName(typeof(UserIndex), ((Controller)e.ListItem).UserIndex);
+            e.Value = Name;
         }
     }
 }
