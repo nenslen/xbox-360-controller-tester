@@ -48,11 +48,13 @@ namespace XboxControllerTest {
         private Vibration vibration;
         private BatteryInformation batteryInfo;
 
-
+        public void setController(Controller controller) {
+            this.controller = controller;
+        }
 
         // Constructor
-        public Xbox360Controller() {
-            controller = new Controller(UserIndex.One);
+        public Xbox360Controller(Controller controller) {
+            setController(controller);
         }
 
 
